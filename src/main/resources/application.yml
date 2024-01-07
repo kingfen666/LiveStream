@@ -1,0 +1,19 @@
+rtmpPort: 1935
+enableHttpFlv: true
+httpFlvPort: 8080
+server:
+  port: 888
+# true stands for saving rtmp stream user pushed as a flv file . false do nothing
+saveFlvFile: true
+# the path where flv stores , must be a existing folder like /home/flv .
+saveFlVFilePath: D:/flv
+# the size of thread pool that write rtmp and flv packages
+handlerThreadPoolSize: 8
+
+keyword: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/live
+    username: "root"
+    password: "3.1415926535zxc"
